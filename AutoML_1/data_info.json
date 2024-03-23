@@ -1,0 +1,52 @@
+{
+    "columns": [
+        "month_dt",
+        "town",
+        "flat_type",
+        "storey_range",
+        "floor_area_sqm",
+        "flat_model",
+        "lease_commence_date",
+        "lease_left"
+    ],
+    "rows": 198349,
+    "cols": 8,
+    "target_is_numeric": true,
+    "columns_info": {
+        "month_dt": [
+            "datetime_transform"
+        ],
+        "town": [
+            "categorical",
+            "many_categories"
+        ],
+        "flat_type": [
+            "categorical",
+            "few_categories"
+        ],
+        "storey_range": [
+            "categorical",
+            "many_categories"
+        ],
+        "floor_area_sqm": [
+            "scale"
+        ],
+        "flat_model": [
+            "categorical",
+            "many_categories"
+        ],
+        "lease_commence_date": [
+            "scale"
+        ],
+        "lease_left": [
+            "missing_values",
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 8,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false
+}

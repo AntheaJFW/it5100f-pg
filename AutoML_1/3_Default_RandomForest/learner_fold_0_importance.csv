@@ -1,0 +1,13 @@
+feature,mean_importance
+month_dt_Month,0.0
+month_dt_WeekDay,0.0
+month_dt_DayOfYear,0.0
+lease_left,0.0009069228913267446
+flat_model,0.004010301765930669
+month_dt_Year,0.004819104460163292
+town,0.0065032158410892275
+storey_range,0.0577239415941098
+flat_type,0.08754638584855269
+month_dt_Days_Diff_To_Min,0.09411496208545791
+lease_commence_date,0.11983905239319519
+floor_area_sqm,0.5419222958458905

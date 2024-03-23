@@ -1,0 +1,5 @@
+name,model_type,metric_type,metric_value,train_time
+1_Baseline,Baseline,rmse,159943.100278627,0.48
+2_Default_Xgboost,Xgboost,rmse,29832.02874547607,40.66
+3_Default_RandomForest,Random Forest,rmse,99235.24010032589,9.01
+Ensemble,Ensemble,rmse,29832.028616348725,0.05
