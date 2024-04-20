@@ -54,7 +54,7 @@
         let notebook = document.getElementById('notebook');
         Array.from(tags).forEach(t => (t.addEventListener('click', e => {
             console.log(e.target.href.split('#')[1]);
-            notebook.src = '/output.html#' + e.target.href.split('#')[1];
+            notebook.src = notebook.src.split('#')[0] + e.target.href.split('#')[1];
         })))
     </script>
 </body>
