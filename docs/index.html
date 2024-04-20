@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body style="height:100vh">
+<body style="height:100dvh">
     <div style="position:absolute; right: 0px; top: 0px;width:25%">
         <h4 style="padding-left:1rem">Table of contents:</h4>
         <nav class="section-nav">
@@ -54,7 +54,7 @@
         let notebook = document.getElementById('notebook');
         Array.from(tags).forEach(t => (t.addEventListener('click', e => {
             console.log(e.target.href.split('#')[1]);
-            notebook.src = './output.html#' + e.target.href.split('#')[1];
+            notebook.src = '/output.html#' + e.target.href.split('#')[1];
         })))
     </script>
 </body>
