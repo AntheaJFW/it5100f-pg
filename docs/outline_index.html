@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="height:100dvh">
+    <div style="position:absolute; right: 0px; top: 0px;width:25%">
+        <h4 style="padding-left:1rem">Table of contents:</h4>
+        <nav class="section-nav">
+            <ol>
+                <li><a href="#Task-1:-Problem-definition">Task 1: Problem definition</a><ul>
+                <li><a href="#Objectives-for-the-Data-Pipeline:">Objectives for the Data Pipeline:</a><ul>
+                <li><a href="#Measurement-of-Success:">Measurement of Success:</a></li>
+                <li><a href="#Use-Cases-for-the-Data-Pipeline:">Use Cases for the Data Pipeline:</a></li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                <li><a href="#Task-2:-Data-collection/curation">Task 2: Data collection/curation</a></li>
+                <li><a href="#Task-3:-Data-preparation">Task 3: Data preparation</a><ul>
+                <li><a href="#Initial-Loading-of-data">Initial Loading of data</a><ul>
+                <li><a href="#Data-cleaning-and-handling-null-values">Data cleaning and handling null values</a></li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                <li><a href="#Task-4:-Exploratory-data-analysis-and-visualization">Task 4: Exploratory data analysis and visualization</a><ul>
+                <li><a href="#Understanding-the-data">Understanding the data</a></li>
+                <li><a href="#Floor-size-over-time-Trend-Analysis:">Floor size over time Trend Analysis:</a><ul>
+                <li><a href="#Town-affect-on-resale-price-over-time">Town affect on resale price over time</a></li>
+                <li><a href="#Investigating-flat_type%27s-effect-on-resale-price">Investigating flat_type's effect on resale price</a></li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                <li><a href="#Task-5:-Modeling-and-visualization">Task 5: Modeling and visualization</a><ul>
+                <li><a href="#Objective-1:-Identify-Location-and-Room-Type-with-Highest-Investment-Return">Objective 1: Identify Location and Room Type with Highest Investment Return</a></li>
+                <li><a href="#Objective-2-1:-Predict-Price-Growth-for-Future-Using-Linear-regression">Objective 2 1: Predict Price Growth for Future Using Linear regression</a></li>
+                <li><a href="#Objective-2-2:-Predict-Price-Growth-for-Future-Using-Machine-Learning">Objective 2 2: Predict Price Growth for Future Using Machine Learning</a></li>
+                </ul>
+                </li>
+                <li><a href="#Task-6:-Report-insights-and-conclusions">Task 6: Report insights and conclusions</a></li>
+            </ol>
+          </nav>
+        <ul>
+        </ul>
+    </div>
+    <iframe id="notebook" src="./index.html" width="75%" height="100%" style="border:0px;"></iframe>
+    <script>
+        const tags = document.getElementsByTagName('a');
+        const notebook = document.getElementById('notebook');
+        Array.from(tags).forEach(t => (t.addEventListener('click', e => {
+            console.log(e.target.href.split('#')[1]);
+            notebook.src = notebook.src.split('#')[0] + "#" + e.target.href.split('#')[1];
+        })))
+    </script>
+</body>
+</html>
